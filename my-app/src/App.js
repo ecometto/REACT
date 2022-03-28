@@ -1,23 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+import Card from './components/Card'
+
+const data = [
+  {
+    name: "joaquina",
+    company: "Coca-Cola",
+    comment: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos deleniti veniam commodi adipisci recusandae velit cumque praesentium maxime possimus nisi?"
+  },
+  {
+    name: "joaquina1",
+    company: "Pepsi",
+    comment: " Lorem1 ipsum2 dolor sit amet consectetur adipisicing elit. Quos deleniti veniam commodi adipisci recusandae velit cumque praesentium maxime possimus nisi?"
+  },
+  {
+    name: "joaquina2",
+    company: "Intel",
+    comment: " Lorem2 ipsum3 dolor sit amet consectetur adipisicing elit. Quos deleniti veniam commodi adipisci recusandae velit cumque praesentium maxime possimus nisi?"
+  },
+]
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    {data.map((cada, i)=>{
+      return(
+
+        <Card 
+        name={cada.name}
+        company = {cada.company}
+        comment = {cada.comment}
+        /> 
+
+      
+        )
+    })}
+
     </div>
   );
 }
