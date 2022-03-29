@@ -1,0 +1,20 @@
+[
+    {
+      "picture": "p1.jpg",
+      "name": "joaquina",
+      "company": "Coca-Cola",
+      "comment": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos deleniti veniam commodi adipisci recusandae velit cumque praesentium maxime possimus nisi?"
+    },
+    {
+      "picture": "p2.jpg",
+      "name": "Juancito",
+      "company": "Pepsi",
+      "comment": " Lorem1 ipsum2 dolor sit amet consectetur adipisicing elit. Quos deleniti veniam commodi adipisci recusandae velit cumque praesentium maxime possimus nisi?"
+    },
+    {
+      "picture": "p3.jpg",
+      "name": "Roberto",
+      "company": "Intel",
+      "comment": " Lorem2 ipsum3 dolor sit amet consectetur adipisicing elit. Quos deleniti veniam commodi adipisci recusandae velit cumque praesentium maxime possimus nisi?"
+    }
+  ]
