@@ -5,15 +5,20 @@ import './Contador.css';
 function Contador() {
     const [num, setNum] = useState(0)
 
-    const aumentar = () => setNum(num + 1)
-
+    const aumentar = () => {
+        if ( num < 10 ) {
+        setNum(num + 1)
+        } else{
+            alert ('ha llegado al liminte')
+        }
+    }
     return (
-        <div className='d-flex justify-content-center' >
+        <div className='d-flex justify-content-center m-5' >
             <div className='contador-container' >
-                {/* <button onClick={aumentar} type='submit'> Aumentar </button> */}
+
                 numero: <span className='fs-3'>{num} </span>
-                <Boton 
-                onClick={aumentar}
+
+                <Boton funcion= {aumentar}
                 text = "aceptar"                
                 />
             </div>
