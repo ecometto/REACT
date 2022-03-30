@@ -1,43 +1,47 @@
 import React from 'react';
 
 class Contador extends React.Component {
+
     state = {
-        nombre: "Edgardo Daniel",
-        edad: 42,
-        trabajo: false
+        numero: 0
     }
 
-    cambiarNombre = ()=> {
-        this.setState({nombre: "charly", edad:19})
+    disminuir = () => {
+        this.setState({ numero: this.state.numero - 1 })
     }
+
+
+    aumentar = () => {
+        this.setState({ numero: this.state.numero + 1 })
+    }
+
+    myStyle = {
+        color: "blue",
+        fontSize: "25px",
+        textDecoration: "underline",
+        textShadow: "1px 2px 2px red",
+    }
+
+    myMark = { 
+        backgroundColor: "green",
+        color: "white",
+        padding: "5px"
+      }
+
     render() {
-
         return (
-            <div className='d-flex justify-content-center flex-column'>
-                hello from component Contador <br />
-                <div>
-                    Te saludo <b> {this.props.nombre}. </b>
-    
-                    Te saludo <span> {this.props.nombre}. </span> <br />
-       
-                    Yo soy {this.state.nombre} y tengo {this.state.edad} años.<br />
+            <div>
+                <p style={this.myStyle}>  El numero es : <span style={this.myMark}> {this.state.numero}</span></p>
 
-                    {this.state.trabajo=== true?"trabajando":"sin trabajar"}
+                <br />
+                <button onClick={this.disminuir}>Click -</button>
+                <button onClick={this.aumentar}>Click +</button>
 
-                </div>
-                <div>
 
-                    <button onClick={this.cambiarNombre}>Cambiar Nombre</button>
-
-                </div>
             </div>
-
         )
 
     }
-
-
 }
-
 
 export default Contador
