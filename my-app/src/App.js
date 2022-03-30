@@ -2,7 +2,6 @@
 import Card from './components/Card';
 import '/data.json'
 
-data
 const data1 = [
   {
     name: "joaquina",
@@ -24,19 +23,26 @@ const data1 = [
 function App() {
   return (
     <div className="App">
+        <div>
+                {data.map((cada, i)=>{
+                return(
+                    <Card
+                    picture={cada.picture}
+                    name={cada.name}
+                    company = {cada.company}
+                    comment = {cada.comment}
+                /> 
+                )
+                })}
+        </div>
+    <br />
+    <br />
+    <br />
 
-    {data.map((cada, i)=>{
-      return(
-
-        <Card 
-        name={cada.name}
-        company = {cada.company}
-        comment = {cada.comment}
-        /> 
-
-      
-        )
-    })}
+        <div >
+            <br />
+            <Contador />
+        </div>
 
     </div>
   );
