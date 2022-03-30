@@ -9,12 +9,12 @@ const saludar = ()=>{
     document.getElementById('saludo').innerHTML = `Hello ${name}!!! Welcome to the Jungle`
 }
 
-function Presentador(){
+function Presentador(props){
     return(
         <div>
             hello I'm preentador from functional component.  <br />
             Please enter your name: <input onChange={nombre} type="text" id='input'/> <br />  <br />
-            <button onClick={saludar}>Click for Welcome</button>
+            <button onClick={props.funcion}>Click for Welcome</button>
             <p id='saludo'></p>
         </div>
 
