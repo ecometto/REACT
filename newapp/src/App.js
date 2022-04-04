@@ -13,7 +13,7 @@ const saludar = () => {
 
 function App() {
   return (
-    <div className="App">
+    <div className="container text-center ">
 
       <Contador
         disminuir="Click -"
