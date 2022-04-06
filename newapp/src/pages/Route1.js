@@ -3,7 +3,7 @@ import React from 'react';
 const Route1 = () => {
     return (
         <div>
-            <p>hello from route2</p>
+            <p>hello I'm PAGE 1.From Pages</p>
         </div>
     );
 }

@@ -3,7 +3,7 @@ import React from 'react';
 const Users = () => {
     return (
         <div>
-            this is the users's page
+            hello I'm PAGE USERS.From Pages
 
 <ul>
     <li>User 1</li>
