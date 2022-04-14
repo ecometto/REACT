@@ -1,0 +1,17 @@
+.navContainer{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ul{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+}
+
+.listItem{
+    list-style: none;
+    border: solid 1px black;
+    margin: 10px;
+    padding: 5px;
+}

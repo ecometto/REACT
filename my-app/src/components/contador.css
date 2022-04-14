@@ -4,7 +4,6 @@
     align-items: center;
     margin: 20px;
     padding: 20px;
-
 }
 
 .counterContainer{
@@ -24,6 +23,7 @@
     text-align: center;
     margin: 20px;
 }
+
 button{
     display: block;
     margin: auto;

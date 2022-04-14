@@ -41,7 +41,7 @@ const Contador = () => {
                     onChange={actualizaValor} 
                     type="number" 
                     id='input' 
-                    autocomplete="off"
+                    autoComplete="off"
                     />
 
                     <button onClick={decrementar}>Decrementar</button>
