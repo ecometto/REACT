@@ -21,14 +21,26 @@ const Contador = () => {
 
     const actualizaValor = () => {
         setValor(document.getElementById('input').value)
+        setNumero(0)
+        setContador(0)
     }
     const incrementar = () => {
-        setNumero(numero + parseInt(valor))
-        setContador(contador + 1)
+        if (document.getElementById('input').value != 0) {
+            setNumero(numero + parseInt(valor))
+            setContador(contador + 1)
+        } else { alert("Debe ingresar un valor válido") }
     }
     const decrementar = () => {
-        setNumero(numero - parseInt(valor))
-        setContador(contador - 1)
+        if (document.getElementById('input').value != 0) {
+            setNumero(numero - parseInt(valor))
+            setContador(contador - 1)
+        } else { alert("Debe ingresar un valor válido") }
+    }
+    const clear = () => {
+        setNumero(0)
+        setContador(0)
+        document.getElementById('input').focus()
+        document.getElementById('input').value = 0
     }
 
 
@@ -36,20 +48,21 @@ const Contador = () => {
         <div>
             <div className='mainContainer '>
                 <div className='counterContainer'>
-                    <p className="fw-bold"> Ingrese el multiplo que quiere incrementar / decrementar <br /></p>
-                    <input 
-                    onChange={actualizaValor} 
-                    type="number" 
-                    id='input' 
-                    autoComplete="off"
+                    <p className="fw-bold"> Ingrese el multiplo que quiere incrementar / decrementar </p>
+                    <input
+                        onChange={actualizaValor}
+                        type="number"
+                        id='input'
+                        autoComplete="off"
                     />
 
-                    <button onClick={decrementar}>Decrementar</button>
                     <button onClick={incrementar}>Incrementar</button>
+                    <button onClick={decrementar}>Decrementar</button>
                     <br />
                     <p>La multiplicacion de  {valor} x {contador} es: </p>
                     <p style={numberStyle}>{numero}</p>
-
+      
+                    <button onClick={clear}>Limpiar</button>
                 </div>
 
             </div>

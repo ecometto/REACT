@@ -1,19 +1,21 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom'
 
-import './new.css';
+
+import './nav.css';
 
 const paginas = [
     {
         nombre: "contador",
-        direccion: "./contador"
+        ruta: "/"
     },
     {
-        nombre: "meme",
-        direccion: "./meme"
+        nombre: "memes",
+        ruta: "memes"
     },
     {
-        nombre: "employee",
-        direccion: "./employee"
+        nombre: "employees",
+        ruta: "employees"
     },
 ]
 
@@ -24,9 +26,9 @@ const Nav = () => {
                 {paginas.map((valor, clave) => {
                     return (
                         <li key={clave} className='listItem'>
-                            <a href="">
+                            <NavLink to={valor.ruta}>
                                 {valor.nombre}
-                            </a>
+                            </NavLink>
                         </li>
                     )
                 })}
