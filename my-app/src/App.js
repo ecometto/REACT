@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Routes, NavLink } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 
 // importing components 
@@ -8,9 +8,10 @@ import Nav from './components/Nav';
 import Memes from './components/Memes.js';
 import Employees from './components/Employees'
 
+
 const App = () => {
   return (
-    <div>
+    <div >
       <BrowserRouter>
 
         <Nav />

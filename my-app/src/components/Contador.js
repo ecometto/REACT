@@ -56,13 +56,15 @@ const Contador = () => {
                         autoComplete="off"
                     />
 
-                    <button onClick={incrementar}>Incrementar</button>
-                    <button onClick={decrementar}>Decrementar</button>
+                    <br />
+
+                    <button className='btn btn-secondary' onClick={incrementar}>Incrementar</button> <br />
+                    <button className='btn btn-secondary' onClick={decrementar}>Decrementar</button>
                     <br />
                     <p>La multiplicacion de  {valor} x {contador} es: </p>
                     <p style={numberStyle}>{numero}</p>
-      
-                    <button onClick={clear}>Limpiar</button>
+
+                    <button className='btn btn-secondary' onClick={clear}>Limpiar</button>
                 </div>
 
             </div>

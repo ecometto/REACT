@@ -21,19 +21,21 @@ const paginas = [
 
 const Nav = () => {
     return (
-        <div className='navContainer '>
-            <ul className='ul'>
-                {paginas.map((valor, clave) => {
-                    return (
-                        <li key={clave} className='listItem'>
-                            <NavLink to={valor.ruta}>
-                                {valor.nombre}
-                            </NavLink>
-                        </li>
-                    )
-                })}
-            </ul>
-        </div>
+
+            <div className='navContainer '>
+                <ul className='ul'>
+                    {paginas.map((valor, clave) => {
+                        return (
+                            <li key={clave} className='listItem'>
+                                <NavLink to={valor.ruta}>
+                                    {valor.nombre}
+                                </NavLink>
+                            </li>
+                        )
+                    })}
+                </ul>
+            </div>
+
     );
 }
 

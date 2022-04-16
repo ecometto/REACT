@@ -1,9 +1,13 @@
 import React from 'react';
 
+
+
 const Employees = () => {
     return (
         <div>
-            Hi2. I'm EMPLOYEES COMPONENTE
+            <p> Hi2. I'm EMPLOYEES COMPONENTE</p>
+
+
         </div>
     );
 }
