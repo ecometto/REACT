@@ -25,13 +25,13 @@ const Contador = () => {
         setContador(0)
     }
     const incrementar = () => {
-        if (document.getElementById('input').value != 0) {
+        if (document.getElementById('input').value !== 0) {
             setNumero(numero + parseInt(valor))
             setContador(contador + 1)
         } else { alert("Debe ingresar un valor válido") }
     }
     const decrementar = () => {
-        if (document.getElementById('input').value != 0) {
+        if (document.getElementById('input').value !== 0) {
             setNumero(numero - parseInt(valor))
             setContador(contador - 1)
         } else { alert("Debe ingresar un valor válido") }
