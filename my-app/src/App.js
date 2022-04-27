@@ -1,8 +1,8 @@
 // import logo from './logo.svg';
 import Card from './components/Card';
-import '/data.json'
 
-const data1 = [
+
+const data = [
   {
     name: "joaquina",
     company: "Coca-Cola",
