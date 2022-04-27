@@ -1,4 +1,4 @@
-[
+ [
     {
       "picture": "p1.jpg",
       "name": "joaquina",
@@ -16,5 +16,11 @@
       "name": "Roberto",
       "company": "Intel",
       "comment": " Lorem2 ipsum3 dolor sit amet consectetur adipisicing elit. Quos deleniti veniam commodi adipisci recusandae velit cumque praesentium maxime possimus nisi?"
+    },
+    {
+      "picture": "p4.jpg",
+      "name": "pepito",
+      "company": "Nvidia",
+      "comment": " Lorem333 et consectetur adipisicing elit. Quos deleniti veniam commodi adipisci recusandae velit cumque praesentium maxime possimus nisi?"
     }
   ]

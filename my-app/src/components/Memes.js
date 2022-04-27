@@ -51,8 +51,7 @@ function Memes() {
                 <div className='mb-3'>
                     ADD YOUR TOP TEXT:
                     <input id="topText" onKeyUp={addTText} type="text" />
-                </div>
-                <div className='mb-3'>
+    
                     ADD YOUR BOTTOM TEXT:
                     <input id="bottomText" onKeyUp={addBText} type="text" />
                 </div>
@@ -64,7 +63,6 @@ function Memes() {
                 </div>
 
                 <div id="capture" >
-                    <h4 >Hello world! i'll be captured</h4>
                     <button onClick={capture}>click capture</button>
                 </div>
 
