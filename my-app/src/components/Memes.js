@@ -31,7 +31,7 @@ function Memes() {
     const capture = () => {
         html2canvas(document.querySelector("#imgContainer")).then(canvas => {
             let img    = canvas.toDataURL("image/png");
-                        var link = document.createElement('a');
+            var link = document.createElement('a');
             link.download= "meme.jpg";
             link.href = img;
             link.click();
