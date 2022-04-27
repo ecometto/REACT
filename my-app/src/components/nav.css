@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navContainer{
+    display: flex;
+    justify-content: flex-end;
+    background-color: aqua;
+}
+
+.ul{
+    display: flex;
+    justify-content: center;
+}
+
+.listItem{
+    list-style: none;
+    border: solid 1px black;
+    margin: 0px 5px 0px 0px;
+    padding: 5px;
+}

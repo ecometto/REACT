@@ -1,30 +1,75 @@
 import React, { useState } from 'react';
-import Boton from './Boton.js';
-import './Contador.css';
 
-function Contador() {
-    const [num, setNum] = useState(0)
+import './contador.css'
 
-    const aumentar = () => {
-        if ( num < 10 ) {
-        setNum(num + 1)
-        } else{
-            alert ('ha llegado al liminte')
-        }
+
+const Contador = () => {
+
+    const numberStyle = {
+        margin: "20px auto",
+        width: "100px",
+        background: "black",
+        color: "rgb(254,254,254)",
+        fontSize: "30px",
+        padding: "10px",
+
+        textAlign: "center",
     }
+    const [numero, setNumero] = useState(0);
+    const [contador, setContador] = useState(0);
+    const [valor, setValor] = useState(0);
+
+    const actualizaValor = () => {
+        setValor(document.getElementById('input').value)
+        setNumero(0)
+        setContador(0)
+    }
+    const incrementar = () => {
+        if (document.getElementById('input').value != 0) {
+            setNumero(numero + parseInt(valor))
+            setContador(contador + 1)
+        } else { alert("Debe ingresar un valor válido") }
+    }
+    const decrementar = () => {
+        if (document.getElementById('input').value != 0) {
+            setNumero(numero - parseInt(valor))
+            setContador(contador - 1)
+        } else { alert("Debe ingresar un valor válido") }
+    }
+    const clear = () => {
+        setNumero(0)
+        setContador(0)
+        document.getElementById('input').focus()
+        document.getElementById('input').value = 0
+    }
+
+
     return (
-        <div className='d-flex justify-content-center m-5' >
-            <div className='contador-container' >
+        <div>
+            <div className='mainContainer '>
+                <div className='counterContainer'>
+                    <p className="fw-bold"> Ingrese el multiplo que quiere incrementar / decrementar </p>
+                    <input
+                        onChange={actualizaValor}
+                        type="number"
+                        id='input'
+                        autoComplete="off"
+                    />
 
-                numero: <span className='fs-3'>{num} </span>
+                    <br />
 
-                <Boton funcion= {aumentar}
-                text = "aceptar"                
-                />
+                    <button className='btn btn-secondary' onClick={incrementar}>Incrementar</button> <br />
+                    <button className='btn btn-secondary' onClick={decrementar}>Decrementar</button>
+                    <br />
+                    <p>La multiplicacion de  {valor} x {contador} es: </p>
+                    <p style={numberStyle}>{numero}</p>
+
+                    <button className='btn btn-secondary' onClick={clear}>Limpiar</button>
+                </div>
+
             </div>
         </div>
-
-    )
+    );
 }
 
-export default Contador
+export default Contador;

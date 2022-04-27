@@ -17,6 +17,7 @@ const Navbar = () => {
 
         <div>
              <ul className="nav bg-dark ">
+         
                     {
                         Links.map((cada) => {
                             return (

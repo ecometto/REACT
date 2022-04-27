@@ -31,7 +31,8 @@ class Contador extends React.Component {
     render() {
         return (
             <div>
-                <p style={this.myStyle}>  El numero es : <span style={this.myMark}> {this.state.numero}</span></p>
+                <p style={this.myStyle}>  El numero es : <span style={this.myMark}>
+                     {this.state.numero}</span></p>
 
                 <br />
                 <button onClick={this.disminuir}>Click -</button>

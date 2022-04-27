@@ -1,0 +1,35 @@
+
+.cont{
+    background: linear-gradient(blueviolet, red);
+    height: 90vh ;
+}
+.imgContainer{
+    position: relative;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    box-sizing: border-box;
+    border: solid 5px rgb(4, 31, 106);
+}
+
+.text{
+    position: absolute;
+    top: 0;
+    left: 20px;
+    font-size: 20px;
+    font-weight: 900;
+    color: rgb(50, 89, 10)
+}
+.img{
+    width: 290px;
+    height: auto;
+}
+.textB{
+    position: absolute;
+    top: 250px;
+    right: 20px;
+    font-size: 20px;
+    font-weight: 900;
+    color: rgb(255, 55, 0);
+
+}
