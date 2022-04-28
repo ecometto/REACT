@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
-import html2canvas from 'html2canvas'
+import html2canvas from 'html2canvas';
+import Canvas2Image from 'canvas2image';
+import 'jquery';
 
 import './memes.css';
+import { Link } from 'react-router-dom';
 
 function Memes() {
 
@@ -25,14 +28,18 @@ function Memes() {
         setTextB(textB.value)
     }
 
-    const capture = ()=>{
-    html2canvas(document.querySelector("#capture")).then(canvas => {
-        var canvas = document.getElementById("capture");
-        var img    = canvas.toDataURL("image/png");
+    const capture = () => {
+        html2canvas(document.querySelector("#imgContainer")).then(canvas => {
+            let img    = canvas.toDataURL("image/png");
+            var link = document.createElement('a');
+            link.download= "meme.jpg";
+            link.href = img;
+            link.click();
 
-    });
-
+        });
     }
+
+
     return (
         <div className='cont d-flex justify-content-center text-center'>
             <div>
@@ -51,7 +58,7 @@ function Memes() {
                 <div className='mb-3'>
                     ADD YOUR TOP TEXT:
                     <input id="topText" onKeyUp={addTText} type="text" />
-    
+
                     ADD YOUR BOTTOM TEXT:
                     <input id="bottomText" onKeyUp={addBText} type="text" />
                 </div>
@@ -66,7 +73,7 @@ function Memes() {
                     <button onClick={capture}>click capture</button>
                 </div>
 
-                <a download="image.png" href="..."></a>
+
 
             </div>
         </div>

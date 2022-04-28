@@ -5,6 +5,7 @@ import Presentador from './components/Presentador.js';
 import Memes from './components/Memes.js';
 
 
+
 const saludar = () => {
   let name = document.getElementById('input').value
   alert(name)
