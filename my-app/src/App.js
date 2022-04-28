@@ -7,6 +7,7 @@ import Contador from './components/Contador';
 import Nav from './components/Nav';
 import Memes from './components/Memes.js';
 import Employees from './components/Employees'
+import FetchJson from './components/FetchJson';
 
 
 const App = () => {
@@ -18,8 +19,9 @@ const App = () => {
 
         <Routes>
           <Route path={"/"} element={<Contador />} />
-         <Route path={"memes"} element={ <Memes />} />
-         <Route path={"employees"} element={ <Employees />}/>
+          <Route path={"memes"} element={ <Memes />} />
+          <Route path={"employees"} element={ <Employees />}/>
+          <Route path={"json"} element={ <FetchJson />}/>
 
         </Routes>
       </BrowserRouter>

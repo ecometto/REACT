@@ -17,6 +17,10 @@ const paginas = [
         nombre: "employees",
         ruta: "employees"
     },
+    {
+        nombre: "json",
+        ruta: "json"
+    },
 ]
 
 const Nav = () => {
