@@ -7,6 +7,7 @@ import Contador from './components/Contador';
 import Nav from './components/Nav';
 import Memes from './components/Memes.js';
 import Employees from './components/Employees'
+import Fetch from './components/Fetch'
 
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
           <Route path={"/"} element={<Contador />} />
          <Route path={"memes"} element={ <Memes />} />
          <Route path={"employees"} element={ <Employees />}/>
+         <Route path={"fetch"} element={ <Fetch />}/>
 
         </Routes>
       </BrowserRouter>
