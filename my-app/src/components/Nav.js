@@ -18,8 +18,12 @@ const paginas = [
         ruta: "employees"
     },
     {
-        nombre: "json",
-        ruta: "json"
+        nombre: "To-do ",
+        ruta: "todos"
+    },
+    {
+        nombre: "fetch",
+        ruta: "fetch"
     },
 ]
 
