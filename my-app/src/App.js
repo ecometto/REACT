@@ -19,11 +19,12 @@ const App = () => {
         <Nav />
 
         <Routes>
+          
           <Route path={"/"} element={<Contador />} />
           <Route path={"memes"} element={ <Memes />} />
           <Route path={"employees"} element={ <Employees />}/>
           <Route path={"todos"} element={ <Todos />}/>
-         <Route path={"fetch"} element={ <Fetch />}/>
+          <Route path={"fetch"} element={ <Fetch />}/>
 
         </Routes>
       </BrowserRouter>
