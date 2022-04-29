@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import html2canvas from 'html2canvas';
-import Canvas2Image from 'canvas2image';
-import 'jquery';
+
 
 import './memes.css';
 import { Link } from 'react-router-dom';

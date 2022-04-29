@@ -17,6 +17,10 @@ const paginas = [
         nombre: "employees",
         ruta: "employees"
     },
+    {
+        nombre: "fetchHere",
+        ruta: "fetch"
+    },
 ]
 
 const Nav = () => {
