@@ -3,7 +3,7 @@ import html2canvas from 'html2canvas';
 
 
 import './memes.css';
-import { Link } from 'react-router-dom';
+
 
 function Memes() {
 
@@ -56,10 +56,10 @@ function Memes() {
 
                 <div className='mb-3'>
                     ADD YOUR TOP TEXT:
-                    <input id="topText" onKeyUp={addTText} type="text" />
+                    <input className='me-4' id="topText" onKeyUp={addTText} type="text" />
 
                     ADD YOUR BOTTOM TEXT:
-                    <input id="bottomText" onKeyUp={addBText} type="text" />
+                    <input className='me-4'  id="bottomText" onKeyUp={addBText} type="text" />
                 </div>
 
                 <div className='imgContainer' id="imgContainer">
