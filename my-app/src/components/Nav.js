@@ -17,12 +17,9 @@ const paginas = [
         nombre: "employees",
         ruta: "employees"
     },
+
     {
-        nombre: "To-do ",
-        ruta: "todos"
-    },
-    {
-        nombre: "fetch",
+        nombre: "Fetch Api",
         ruta: "fetch"
     },
 ]
