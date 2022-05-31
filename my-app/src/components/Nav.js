@@ -22,6 +22,10 @@ const paginas = [
         nombre: "Fetch Api",
         ruta: "fetch"
     },
+    {
+        nombre: "Lista Tareas",
+        ruta: "tareas"
+    },
 ]
 
 const Nav = () => {
