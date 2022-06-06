@@ -16,17 +16,13 @@ const App = () => {
     <div >
 
       <BrowserRouter>
-
         <Nav />
-
         <Routes>
-          
           <Route path={"/"} element={<Contador />} />
-          <Route path={"memes"} element={ <Memes />} />
-          <Route path={"employees"} element={ <Employees />}/>
-          <Route path={"fetch"} element={ <Fetch />}/>
-          <Route path={"tareas"}  element={ <Todos />}/>
-
+          <Route path={"memes"} element={<Memes />} />
+          <Route path={"employees"} element={<Employees />} />
+          <Route path={"fetch"} element={<Fetch />} />
+          <Route path={"tareas"} element={<Todos />} />
         </Routes>
       </BrowserRouter>
 

@@ -31,8 +31,16 @@ const paginas = [
 const Nav = () => {
     return (
 
-            <div className='navContainer '>
-                <ul className='ul'>
+        <div className='navContainer '>
+
+        <div>
+                <a className="btn btn-danger m-1 p-1" href="https://ecometto.com.ar/portafolio.php">Volver</a>
+        </div>
+
+            <ul className='ul d-flex justify-content-center'>
+
+
+                <div className='d-flex'>
                     {paginas.map((valor, clave) => {
                         return (
                             <li key={clave} className='listItem'>
@@ -42,8 +50,9 @@ const Nav = () => {
                             </li>
                         )
                     })}
-                </ul>
-            </div>
+                </div>
+            </ul>
+        </div>
 
     );
 }
