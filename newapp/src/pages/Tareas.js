@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './tareas.css';
 
 // import modules
-import Tarea from './Tarea';
+import Tarea from '../components/Tarea';
 
 export default function Tareas() {
     const [listaTareas, setListaTareas] = useState([]);
@@ -72,7 +72,7 @@ useEffect(()=>{
     return (
         <div>
 
-            <h1 className='text-center my-4'>ToDo LIST</h1>
+            <h1 className='text-center mt-4 mb-2'>ToDo LIST</h1>
             <div className='title-container'>
                 <p>Here you can see a classic ToDo list. You'll be able to create, edit and close tasks.</p>
                 <p><u><b>Used tools:</b></u> Components, UseState, Props, UseEffect, others</p>
