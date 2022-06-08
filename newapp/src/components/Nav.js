@@ -7,7 +7,7 @@ const Nav = () => {
         <div className='d-flex justify-content-start align-items-center bg-light'>
             <ul className='d-flex list-unstyled '>
                 <li className='m-1 p-2 bg-secondary rounded'><NavLink className="link-light fw-bold" to="/">Home</NavLink></li>
-                <li className='m-1 p-2 bg-secondary rounded'><NavLink className="link-light fw-bold" to="/tareas">Tareas</NavLink></li>
+                <li className='m-1 p-2 bg-secondary rounded'><NavLink className="link-light fw-bold" to="/tareas">ToDo List</NavLink></li>
             </ul>
 
         </div>
