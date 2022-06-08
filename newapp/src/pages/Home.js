@@ -19,7 +19,7 @@ export default function Home() {
             <h1 className='p-3'>HELLO.. </h1>
 
             <p className='p-3'> This is a SPA (Single Page Application) created in React Js, as part of a set of tests I have made learning this wonderful framework</p>
-            <h5 className='p-3'>TANK YOU FOR READ ME !!</h5>
+            <h5 className='p-3'>THANK YOU FOR READ ME !!</h5>
             <br />
             <hr />
             <div className='d-flex justify-content-between'>
