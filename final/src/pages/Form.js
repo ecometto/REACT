@@ -3,7 +3,7 @@ import React, { useRef } from 'react'
 export default function Form() {
 
     const nombre = useRef();
-    // const apellido = useRef();
+    const apellido = useRef();
 
     return (
         <div className='text-center margin-auto bg-secondary col-md-6 offset-md-3 p-4 my-4 rounded'>
@@ -20,11 +20,11 @@ export default function Form() {
                 <input className='form-control mb-2'
                     type="text"
                     placeholder='Ingrese su apellido'
-                    // ref={apellido} 
+                    ref={apellido} 
                     />
-                <button onClick={console.log(nombre.current.value)} className='btn btn-success'>Enviar Datos</button>
+                <button onClick={console.log("hola chicos")} className='btn btn-success'>Enviar Datos</button>
             </div>
-            {console.log(nombre)}
+     
             <h3></h3>
         </div>
     )
