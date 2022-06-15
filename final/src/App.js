@@ -8,6 +8,8 @@ import Home from  './pages/Home.js';
 import Tareas from './pages/Tareas.js';
 import Form from './pages/Form.js'; 
 import Galery from "./pages/Galery";
+import Juegos from "./pages/Juegos";
+
 
 function App() {
   return (
@@ -22,6 +24,7 @@ function App() {
             <Route path="/tareas" element={<Tareas />} />
             <Route path="/form" element={<Form />} />
             <Route path="/galery" element={ < Galery />} />
+            <Route path="/juegos" element={ < Juegos   />} />
           </Routes>
         </BrowserRouter>
 
