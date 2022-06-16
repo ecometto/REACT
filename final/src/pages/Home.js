@@ -25,7 +25,7 @@ export default function Home() {
             <br />
             <hr />
             <div className='d-flex justify-content-between'>
-                <img style={myImg} src="img/ced.jpg" alt="Foto ECometto" />
+                <img style={myImg} src="img/edgardo.jpg" alt="Foto ECometto" />
                 <p className='text-end mx-2 fs-3'>Lic. Edgardo Cometto.</p>
             </div>
         </div>
