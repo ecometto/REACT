@@ -16,6 +16,7 @@ const Nav = () => {
                 {/* <li className='m-1 p-2 bg-secondary rounded'><NavLink className="link-light fw-bold" to="/form">ContactForm</NavLink></li> */}
                 <li className='m-1 p-2 bg-secondary rounded'><NavLink className="link-light fw-bold" to="/galery">Galery</NavLink></li>
                 <li className='m-1 p-2 bg-secondary rounded'><NavLink className="link-light fw-bold" to="/juegos">Juegos</NavLink></li>
+                <li className='m-1 p-2 bg-secondary rounded'><NavLink className="link-light fw-bold" to="/personas">Guia Personas</NavLink></li>
 
             </ul>
 

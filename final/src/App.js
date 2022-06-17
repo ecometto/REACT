@@ -9,7 +9,7 @@ import Tareas from './pages/Tareas.js';
 import Form from './pages/Form.js'; 
 import Galery from "./pages/Galery";
 import Juegos from "./pages/Juegos";
-
+import Personas from './pages/Personas';
 
 function App() {
   return (
@@ -25,6 +25,7 @@ function App() {
             <Route path="/form" element={<Form />} />
             <Route path="/galery" element={ < Galery />} />
             <Route path="/juegos" element={ < Juegos   />} />
+            <Route path="/personas" element={ < Personas   />} />
           </Routes>
         </BrowserRouter>
 
