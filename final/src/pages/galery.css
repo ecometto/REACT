@@ -5,8 +5,8 @@
     border: solid 2px gray;
     background-color: white;
     list-style: none;
-    border-radius: 5px;
-    box-Shadow: 2px 2px 2px rgb(125, 121, 121);
+    border-radius: 10px;
+    box-Shadow: 4px 4px 4px rgb(125, 121, 121);
     width: 250px;
 }
 

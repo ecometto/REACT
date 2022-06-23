@@ -35,6 +35,7 @@ export default function Personas() {
         <div className='container d-flex flex-column align-items-center text-center bg-dark text-light fs-5'>
 
 <div className='d-fixed m-5 container-fluid'>
+                <p className='text-start'>Data extracted from Fake Api https://fakerapi.it</p>
                 <h3 className='bg-info container-fluid'>LISTADO DE PERSONAS</h3>
                 Buscar:
                 <input className='m-2 col-6' type="text" ref={filtro1} onKeyUp={() => actualizar(filtro1.current.value)} name="filtro" id="filtro" placeholder='Ingrese la persona que busca' />

@@ -32,6 +32,7 @@ const Galery = () => {
                                 <p className='fw-bold'>ID: {pic.id}  </p>
                                 <p className='picTitle'>Title: {pic.title} </p>
                                 <img 
+                                className='rounded-circle'
                                 src={pic.thumbnailUrl}
                                 alt="foto de algo"
                                 />

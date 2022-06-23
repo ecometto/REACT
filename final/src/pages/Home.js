@@ -2,12 +2,13 @@ import React from 'react';
 
 export default function Home() {
     const myStyle = {
-        "maxWidth": "1000px",
+        "maxWidth": "800px",
         "backgroundColor": "rgba(50,50,50,0.5)",
         "fontSize": "1.2em",
         "fontStyle": "oblique",
         "boxShadow": "10px 10px 10px rgba(0,0,254,0.5), 30px 30px 10px rgba(100,100,254,0.5)",
-        "borderRadius":"5px"
+        "borderRadius":"5px",
+
     }
 
     const myImg = {
