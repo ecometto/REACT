@@ -1,19 +1,44 @@
-import React, { useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 import './nav.css'
 
+
 const Nav = () => {
-
     const [visible, setVisible] = useState("d-flex list-unstyled");
+    const ul = useRef('')
 
+    useEffect(() => {
+        window.addEventListener('resize', handleResize)
+    });
+    const handleResize = ()=>{
+        let x = window.innerWidth
+        if(x > 970){
+            ul.current.style.display = "flex"
+        } else if(x < 970){
+            ul.current.style.display = "none"
+        }
+        
+    }
+
+    const viewMenu = (e)=>{
+        if (ul.current.style.display === "flex") {
+            ul.current.style.transition = "all 2s";
+            ul.current.style.display = "none";
+          } else {
+            ul.current.style.transition = "all 2s";
+            ul.current.style.display = "flex";
+          }
+     }
+     
     return (
-        <div className='navBar'>
+        <div className='navBar container-fluid'>
             <div className='logo'>
                 <a className="btn btn-danger" href="https://ecometto.com.ar/portafolio.php">Volver</a>
             </div>
-            <div className='listas'>
-                <ul className="d-flex justify-items-center">
+            <div>
+                <ul className="navUl" ref={ul}  onClick={viewMenu}>
                     <li className='navItem'>
                         <NavLink className="link-dark fw-bold" to="/">Home</NavLink>
                     </li>
@@ -34,8 +59,9 @@ const Nav = () => {
                     </li>
                 </ul>
             </div>
-            <div className='menu'>
-                <button id='menuToggle' > MENU  </button>
+            <div className='menu' onClick={viewMenu}>
+                menu <br />
+                <i className="bi bi-three-dots menuToggle"></i>  
             </div>
         </div>
     );

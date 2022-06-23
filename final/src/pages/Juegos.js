@@ -10,8 +10,8 @@ export default function Juegos() {
     return (
         <div className='container bg-light'>
             <div className='row m-1'>
-                <div className='col-6 border p-2 '>    <Contador /></div>
-                <div className='col-6 border p-2 '> <Memes /></div>
+                <div className='col-md-6 border p-2 '>    <Contador /></div>
+                <div className='col-md-6 border p-2 '> <Memes /></div>
             </div>
         </div>
     )
