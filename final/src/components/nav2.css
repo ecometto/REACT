@@ -1,0 +1,22 @@
+:root{
+    --darkColor: rgb(20,20,20);
+    --lightColor: rgb(220,220,220);
+}
+.dark{
+    background-color: var(--darkColor);
+    color: var(--lightColor);
+}
+.light{
+    background-color: var(--lightColor);
+    color: var(--darkColor);
+}
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.iconContainer{
+
+}
