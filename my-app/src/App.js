@@ -6,9 +6,9 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Contador from './components/Contador';
 import Nav from './components/Nav';
 import Memes from './components/Memes.js';
-import Employees from './components/Employees'
+import Employees from './components/Employees';
 import Todos from './components/Todos.js';
-import Fetch from './components/Fetch'
+import Fetch from './components/Fetch';
 
 
 const App = () => {

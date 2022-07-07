@@ -10,6 +10,7 @@ import Galery from "./pages/Galery";
 import Juegos from "./pages/Juegos";
 import Personas from './pages/Personas';
 import Clima from './pages/Clima.js';
+import Nav2 from  './components/Nav2.js';
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
 {/* {"backgroundColor":"rgba(220,180,220,0.3)", "height":"100vh"}  */}
 <div style={{}}>
         <BrowserRouter>
-          < Nav2 />
+          {/* < Nav /> */}
+          <Nav2 />
           <Routes>
             <Route path="" element={<Home />} />
             <Route path="/tareas" element={<Tareas />} />

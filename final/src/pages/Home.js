@@ -16,6 +16,7 @@ export default function Home() {
         "borderRadius": "50%",
     }
 
+
     return (
         <div style={myStyle} className='container text-center m-2 p-3 mx-auto'>
             <h1 className='p-2'>HELLO.. </h1>
@@ -26,7 +27,7 @@ export default function Home() {
             <br />
             <hr />
             <div className='d-flex justify-content-between'>
-                <img style={myImg} src="img/edgardo.jpg" alt="Foto ECometto" />
+                <img style={myImg} src='react/img/edgardo.jpg' alt="Foto ECometto" />
                 <p className='text-end mx-2 fs-3'>Lic. Edgardo Cometto.</p>
             </div>
         </div>
