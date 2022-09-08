@@ -21,7 +21,7 @@ const menu = useRef('');
             <li><a href="#">enlace</a></li>
           </ul>
         </div>
-        <div>
+        <div className='buttons'>
           <button ref={theme} className='btn toggleTheme dark'>Toggle Theme</button>
           <button ref={menu} className='btn toggleTheme dark'>Menu..</button>
         </div>

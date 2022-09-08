@@ -11,12 +11,34 @@
     color: var(--darkColor);
 }
 
+@media screen and (max-width:900px) {
 
-.nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.iconContainer{
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu{
+        position: relative;
+        transition: all 1s;
+        transform: translateY(0px);
+        width: 100%;
+    }
+    .menu ul{
+        /* width: 100%; */
+        background-color: aqua;
+        padding: 0;
+        margin: 0;
+    }
+    .menu ul li{
+        list-style: none;
+        text-align: center;
+        padding: 5px;
+        background-color:rgb(40,40,40);
+    }
+    .buttons
+
 
 }
+
+
