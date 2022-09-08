@@ -1,14 +1,17 @@
-:root{
-    --darkColor: rgb(20,20,20);
-    --lightColor: rgb(220,220,220);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.dark{
-    background-color: var(--darkColor);
-    color: var(--lightColor);
+
+.button {
+    width: 80px;
 }
-.light{
-    background-color: var(--lightColor);
-    color: var(--darkColor);
+
+a {
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px;
 }
 
 @media screen and (max-width:900px) {
@@ -36,9 +39,4 @@
         padding: 5px;
         background-color:rgb(40,40,40);
     }
-    .buttons
-
-
 }
-
-
