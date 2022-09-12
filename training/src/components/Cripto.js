@@ -55,7 +55,7 @@ export default function Cripto() {
                             data.map((element) => {
                                 return (
                                     <tr>
-                                        <td>{element.symbol}</td>
+                                        <td> <img src={element.image} alt="thumbnail" height='20px'/> {element.symbol}</td>
                                         <td>{element.name}</td>
                                         <td>{element.current_price}</td>
                                         <td>{element.market_cap_change_percentage_24h}</td>
