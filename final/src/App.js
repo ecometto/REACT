@@ -10,7 +10,7 @@ import Galery from "./pages/Galery";
 import Juegos from "./pages/Juegos";
 import Personas from './pages/Personas';
 import Clima from './pages/Clima.js';
-import Nav2 from  './components/Nav2.js';
+// import Nav2 from  './components/Nav2.js';
 
 function App() {
   return (
