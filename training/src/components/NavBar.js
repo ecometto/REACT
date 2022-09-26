@@ -2,6 +2,7 @@
 import { Link } from 'react-router-dom'
 
 
+
 function NavBar() {
 
     return (
@@ -18,15 +19,21 @@ function NavBar() {
                 </button>
 
                 <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav">
-                        <li className="nav-item mx-2 bg-secondary rounded text-center">
-                            <Link className='link-dark p-2 ' to="/">Home</Link>
+                    <ul className="navbar-nav ">
+                        <li className="nav-item m-2 p-1 bg-secondary rounded text-center">
+                            <Link className='link-dark p-2 text-light fw-bold ' to="/">Home</Link>
                         </li>
-                        <li className="nav-item mx-2 bg-secondary rounded text-center">
-                            <Link className='link-dark p-2 ' to="cripto">Cripto</Link>
+                        <li className="nav-item m-2 p-1 bg-secondary rounded text-center">
+                            <Link className='link-dark p-2 text-light fw-bold ' to="cripto">Cripto</Link>
                         </li>
-                        <li className="nav-item mx-2 bg-secondary rounded text-center">
-                            <Link className='link-dark p-2 ' to="fotos">Fotos</Link>
+                        <li className="nav-item m-2 p-1 bg-secondary rounded text-center">
+                            <Link className='link-dark p-2  text-light fw-bold' to="fotos">Pictures</Link>
+                        </li>
+                        <li className="nav-item m-2 p-1 bg-secondary rounded text-center">
+                            <Link className='link-dark p-2  text-light fw-bold' to="datatable">Countries</Link>
+                        </li>
+                        <li className="nav-item m-2 p-1 bg-secondary rounded text-center">
+                            <Link className='link-dark p-2  text-light fw-bold' to="calculator">Calculator</Link>
                         </li>
                     </ul>
                 </div>
