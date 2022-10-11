@@ -6,7 +6,7 @@ function Task(props) {
             <div className="row">
                 <div className="col-8">
                     <h4>
-                        {props.data.titulo}
+                        Tarea N°: {props.data.id} - {props.data.titulo}
                     </h4>
                     <p>
                         Estado: <span>{props.data.estado ? 'Activo' : 'Finalizada'}</span>
