@@ -4,3 +4,10 @@
   box-sizing: border-box;
   /* background-color: aqua; */
 }
+
+.link{
+  padding: 10px;
+  color: silver;
+  font-weight: 800;
+
+}

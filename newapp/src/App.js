@@ -1,17 +1,28 @@
-import { useState, useEffect } from 'react';
+import {BrowserRouter, Routes, Route, Link} from 'react-router-dom'
 import './App.css'
-import Todos2 from './pages/Todos2';
-// import TodoList from './pages/TodoList';
+
+// Importing components 
+import TodosLocalStorage from './pages/TodosLocalStorage';
+import TodoList from './pages/TodoList';
 
 
 function App() {
     
     // retorno renderizado ------- 
     return (
-        <div className="container ">
-            <Todos2 />
-            {/* <TodoList /> */}
-        </div>
+
+        <BrowserRouter>
+        <nav className='bg-secondary'>
+            <Link className='link' to="/">HOME</Link>
+            <Link className='link' to="/task2">TASK 2</Link>
+        </nav>
+        
+            <Routes>
+                <Route path="/" element={<TodosLocalStorage />} />
+                <Route path="/task2" element={<TodoList />} />
+            </Routes>
+        </BrowserRouter>
+
     );
 }
 
