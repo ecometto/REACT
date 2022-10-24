@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import { Fotos } from "./components/Fotos";
 import Calculator from './components/Calculator';
+import Tarea from './components/TodosLocalStorage';
 import Cripto from './components/Cripto';
 import NavBar from "./components/NavBar";
 import DatatableMUI from "./components/DatatableMUIadvance";
@@ -21,6 +22,7 @@ function App() {
                 <Route path={'fotos'} element={<Fotos />}></Route>
                 <Route path={'datatable'} element={<DatatableMUI />}></Route>
                 <Route path={'calculator'} element={<Calculator />}></Route>
+                <Route path={'tarea'} element={<Tarea />}></Route>
 
                 <Route path={'/*'} element={<Error />} />
             </Routes>

@@ -35,6 +35,9 @@ function NavBar() {
                         <li className="nav-item m-2 p-1 bg-secondary rounded text-center">
                             <Link className='link-dark p-2  text-light fw-bold' to="calculator">Calculator</Link>
                         </li>
+                        <li className="nav-item m-2 p-1 bg-secondary rounded text-center">
+                            <Link className='link-dark p-2  text-light fw-bold' to="tarea">Tareas</Link>
+                        </li>
                     </ul>
                 </div>
 

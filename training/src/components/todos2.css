@@ -1,0 +1,10 @@
+.reset{
+    cursor: pointer;
+    background-color: orangered;
+    position: absolute;
+    bottom: -5px;
+    right: 5px;
+    padding: 5px;
+    border-radius: 5px;
+
+}
