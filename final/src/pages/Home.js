@@ -21,8 +21,8 @@ export default function Home() {
         <div style={myStyle} className='container text-center m-2 p-3 mx-auto'>
             <h1 className='p-2'>HELLO.. </h1>
 
-            <p className='p-3'> This is a SPA (Single Page Application) created in React Js, as part of a set of tests I have made learning this wonderful framework<br />
-            For each page I'll try to explain briefly the concepts and tools applied. I hope you enjoy it.</p>
+            <p className='p-3'> This is a SPA (Single Page Application) created in React Js, as was made as part of my practice, learning this wonderful framework<br />
+            For each different tab, I'll try to explain briefly the concepts and tools applied. I hope you enjoy it.</p>
             <h5 className='p-2'>THANK YOU FOR READ ME !!</h5>
             <br />
             <hr />
