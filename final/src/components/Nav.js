@@ -34,9 +34,9 @@ const Nav = () => {
      
     return (
         <div className='navBar container-fluid'>
-            {/* <div className='logo'>
-                <a className="btn btn-danger" href="https://ecometto.com.ar/portafolio.php">Volver</a>
-            </div> */}
+            <div className='logo'>
+                <a className="btn btn-danger" href="https://ecometto.com.ar">Volver</a>
+            </div>
             <div>
                 <ul className="navUl" ref={ul}  onClick={viewMenu}>
                     <li className='navItem'>

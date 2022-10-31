@@ -49,7 +49,7 @@ export default function Tareas() {
             const temp = [...listaTareas]
             temp.map(tarea=> tarea.id===id?tarea.finalizado = true:""     
                 )
-                console.log(temp)
+                // console.log(temp)
             setListaTareas(temp)
 
             // let msg = document.getElementById('msg')

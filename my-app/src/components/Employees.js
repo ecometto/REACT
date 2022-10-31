@@ -1,5 +1,6 @@
 import React from 'react';
 import data from '../data/data.json'
+import './img/p1.jpg'
 
 const Employees = () => {
     return (
@@ -9,7 +10,9 @@ const Employees = () => {
                 return(
                     <div key = {index} className="container row bg-light border m-4 rounded-3">
                         <div className='col-2 d-flex justify-content-center align-items-center'>
-                            <img className='rounded-circle' width="100px" src={"./img/" + persona.picture} alt="" />
+                            {/* <img className='rounded-circle' width="100px" src={"./react/static/img/" + persona.picture} alt="" /> */}
+                            <img className='rounded-circle' width="100px" src={"react/img/"+persona.picture}   alt="" />
+
                         </div>
 
                         <div className='col-8 text-center '>

@@ -8,7 +8,7 @@ const Galery = () => {
     const getData = async () => {
         const res = await fetch('https://jsonplaceholder.typicode.com/photos');
         const data1 = await res.json()
-        console.log(data1);
+        // console.log(data1);
         setPic(data1)
     }
 

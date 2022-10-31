@@ -71,7 +71,7 @@ function Memes() {
 
                     <div className='imgContainer' id="imgContainer">
                         <span className='text'>{text}</span>
-                        <img className='img' src={"img/" + pict} alt="meme1" />
+                        <img className='img' src={"react/img/" + pict} alt="meme1" />
                         <span className='textB'>{textB}</span>
                     </div>
 
