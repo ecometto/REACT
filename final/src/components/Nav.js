@@ -25,7 +25,7 @@ const Nav = () => {
     const viewMenu = (e)=>{
         if (ul.current.style.display === "flex") {
             ul.current.style.transition = "all 2s";
-            ul.current.style.display = "none";
+            ul.current.style.display = "flex";
           } else {
             ul.current.style.transition = "all 2s";
             ul.current.style.display = "flex";
@@ -34,9 +34,9 @@ const Nav = () => {
      
     return (
         <div className='navBar container-fluid'>
-            <div className='logo'>
+            {/* <div className='logo'>
                 <a className="btn btn-danger" href="https://ecometto.com.ar/portafolio.php">Volver</a>
-            </div>
+            </div> */}
             <div>
                 <ul className="navUl" ref={ul}  onClick={viewMenu}>
                     <li className='navItem'>
@@ -54,9 +54,9 @@ const Nav = () => {
                     <li className='navItem'>
                         <NavLink className="link-dark fw-bold" to="/personas">Guia Personas</NavLink>
                     </li>
-                    <li className='navItem'>
+                    {/* <li className='navItem'>
                         <NavLink className="link-dark fw-bold" to="/clima">Clima</NavLink>
-                    </li>
+                    </li> */}
                 </ul>
             </div>
             <div className='menu' onClick={viewMenu}>

@@ -39,8 +39,8 @@ const Nav2 = () => {
                         </ul>
                     </div>
                     <div className='buttons'>
-                        <button ref={} className='btn toggleTheme dark'>Toggle Theme</button>
-                        <button ref={} className='btn toggleTheme dark'>Menu..</button>
+                        <button  className='btn toggleTheme dark'>Toggle Theme</button>
+                        <button className='btn toggleTheme dark'>Menu..</button>
                     </div>
                 </div>
             </div>
