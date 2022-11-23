@@ -18,14 +18,14 @@ export default function Countries() {
     return (
         <div className='container'>
 
-            <table className='table' id='myTable'>
+            <table className='table table-responsive' id='myTable'>
                 <thead>
                     <tr>
                         <th>ID</th>
                         <th>NAME</th>
                         <th>CAPITAL</th>
                         <th>FLAG</th>
-                        <th>LTN-LNG</th>
+                        <th>MAP - LOCATION</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -38,14 +38,18 @@ export default function Countries() {
                                         <td>{c.altSpellings[0]}</td>
                                         <td>{c.name['common']}</td>
                                         <td>{c.capital}</td>
-                                        <td><a target='_blanck' href={c.flags['png']}> Bandera.. </a></td>
+                                        <td>
+                                            <a target='_blanck' href={c.flags['png']}>
+                                                <img src={c.flags['png']} alt={`img ${c.name['common']} `} width="100px"></img>
+                                            </a>
+                                        </td>
                                         <td>
                                             <a target="_blanck" href={`https://www.google.com/maps/place/${c.name['common']} `} >
-                                                Ver en mapa..
+                                                LOCATION..
                                             </a>
                                         </td>
                                     </tr>
-   
+
                                 )
                             }
                             )
