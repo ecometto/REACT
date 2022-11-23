@@ -54,9 +54,9 @@ const Nav = () => {
                     <li className='navItem'>
                         <NavLink className="link-dark fw-bold" to="/personas">Guia Personas</NavLink>
                     </li>
-                    {/* <li className='navItem'>
-                        <NavLink className="link-dark fw-bold" to="/clima">Clima</NavLink>
-                    </li> */}
+                    <li className='navItem'>
+                        <NavLink className="link-dark fw-bold" to="/countries">Countries</NavLink>
+                    </li>
                 </ul>
             </div>
             <div className='menu' onClick={viewMenu}>

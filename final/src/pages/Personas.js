@@ -19,8 +19,8 @@ export default function Personas() {
     const actualizar = (e) => {
         setFiltro(e)
         const parcial = filtrado.filter(p =>
-        (p.firstname.toUpperCase().includes(e.toUpperCase()) 
-        || p.lastname.toUpperCase().includes(e.toUpperCase())
+        (p.firstname.toUpperCase().includes(e.toUpperCase())
+            || p.lastname.toUpperCase().includes(e.toUpperCase())
         )
         )
         setlistaPersonas(parcial)
@@ -34,13 +34,13 @@ export default function Personas() {
     return (
         <div className='container d-flex flex-column align-items-center text-center bg-dark text-light fs-5'>
 
-<div className='d-fixed m-5 container-fluid'>
+            <div className='d-fixed m-5 container-fluid'>
                 <p className='text-start'>Data extracted from Fake Api https://fakerapi.it</p>
                 <h3 className='bg-info container-fluid'>LISTADO DE PERSONAS</h3>
                 Buscar:
                 <input className='m-2 col-6' type="text" ref={filtro1} onKeyUp={() => actualizar(filtro1.current.value)} name="filtro" id="filtro" placeholder='Ingrese la persona que busca' />
 
-</div>    
+            </div>
             <ul>
                 {
                     listaPersonas.length == 0 ?

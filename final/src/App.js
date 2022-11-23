@@ -10,6 +10,8 @@ import Tareas from './pages/Tareas.js';
 import Galery from "./pages/Galery";
 import Juegos from "./pages/Juegos";
 import Personas from './pages/Personas';
+import Countries from './pages/Countries.js';
+import CountryDet from './pages/CountryDet.js';
 // import Clima from './pages/Clima.js';
 
 
@@ -23,11 +25,14 @@ function App() {
           < Nav />
           {/* <Nav2 /> */}
           <Routes>
+            
             <Route path="/" element={<Home />} />
             <Route path="/tareas" element={<Tareas />} />
             <Route path="/galery" element={ < Galery />} />
-            <Route path="/juegos" element={ < Juegos   />} />
-            <Route path="/personas" element={ < Personas   />} />
+            <Route path="/juegos" element={ < Juegos />} />
+            <Route path="/personas" element={ < Personas />} />
+            <Route path="/countries" element={< Countries />} />
+      
             {/* <Route path="/clima" element={ <Clima />} /> */}
           </Routes>
         </BrowserRouter>
