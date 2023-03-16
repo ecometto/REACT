@@ -1,7 +1,9 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+This is about projects in React than I made in order to practice this library 
+Include: Copunter, meme maker, employee list, Fetch task, Own task.
+No databases were used.
 ## Available Scripts
 
 In the project directory, you can run:
