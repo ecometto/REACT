@@ -1,0 +1,40 @@
+.employee-container{
+    /* background:  linear-gradient(90deg, rgba(138, 43, 226, 0.5), rgba(0, 0, 255,0.8)); */
+    background: linear-gradient(90deg, rgba(138, 43, 226, 0.4), rgba(0, 0, 255, 0.4)),  url('../../public/img/matrix.jfif') ;
+    max-width: 400px;
+    max-height: 150px;
+    margin: 10px;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    animation: appear 1s linear;
+}
+@keyframes appear{
+    0%{transform: translateX(-100px);}
+    /* 50%{transform: translateX(-100px);} */
+    100%{transform: translateX(0px);}
+
+}
+
+.employee-container .img-container{
+   display: flex;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.employee-container .img-container img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+.employee-container .text-container{
+    color: white;
+    padding: 20px;
+
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .clicked {
+            opacity: 0.5;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="main"> </div>
+
+    <script>
+        const main = document.getElementById('main')
+
+        function persona(parametro) {
+            main.innerHTML += `<div>
+                
+                                    <img src=${parametro.img} >
+                                    <h3>
+                                        hola. soy ${parametro.nombre} y tengo ${parametro.edad} 
+                                    </h3>
+                                </div>
+                                <hr>`
+        }
+
+        persona({ nombre: "Edy", edad: 42, img: "https://randomuser.me/api/portraits/men/66.jpg" })
+        persona({ nombre: "Rudy", edad: 40, img: "https://randomuser.me/api/portraits/men/81.jpg" })
+
+        const imgs = main.querySelectorAll('img')
+        imgs.forEach((cada) => {
+            cada.addEventListener('click', (e) => {
+                e.target.classList.toggle('clicked')
+                // e.target.nextSibling.nextSibling.innerText = "clicked"
+            })
+
+        })
+
+    </script>
+</body>
+
+</html>
