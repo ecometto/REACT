@@ -1,0 +1,25 @@
+.card{
+    background-color:darkgray;
+    width: 300px;
+    border: solid 1px gray;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.card-img img{
+    margin-left: calc(50% - 75px);
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.separator{
+    width: 50%;
+    margin: 20px auto;
+    height: 1px;
+    background-color: silver;
+}
+.card-details{
+    /* font-style font-weight font-size font-family */
+    font: italic 18px arial ;
+    line-height: 35px;
+}

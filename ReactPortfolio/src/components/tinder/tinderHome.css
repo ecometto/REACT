@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin:0;
+}
+
+.cardContainer{
+    min-height: 400px;
+    width: 100%;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+.tinderUserCard{
+    width: 400px;
+    height: 400px;
+    background-position: center;
+    background-size:cover;
+    margin: auto;
+}
+
+.tinderUserCard p{
+    background-color: rgba(200,200,200,0.5);
+    margin: 0;
+    padding: 5px;
+}
+
+
+
+.swipe{
+    position: absolute;
+}

@@ -1,0 +1,23 @@
+.window{
+    position: absolute;
+    margin-top: -100px;
+    background-color: rgba(20,20,20,0.15);
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.loading-container{
+    background-color: rgb(250, 250, 250);
+    height: 100px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    font: italic bold 20px arial;
+}
+

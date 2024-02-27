@@ -1,0 +1,29 @@
+.me{
+    background-color: aqua;
+    width: 250px;
+    margin-left: 20px;
+    padding: 5px;
+    border-radius: 0px 10px 0px 10px;
+    position: relative;
+}
+
+.me::before{
+    content: "";
+    position: absolute;
+    height: 10px;
+    width:10px;
+    /* border-radius: 50%; */
+    background-color: aqua;
+    transform:translate(-20px, -00px) rotateZ(45deg);
+    color:aqua;
+    font-size: 40px;
+}
+
+.other{
+    background-color: blue;
+    width: 250px;
+    margin-left: calc(100% - 250px - 20px);
+    padding: 5px;
+    border-radius: 10px 0px 10px 0px;
+    color: rgb(250,250,250)
+}
